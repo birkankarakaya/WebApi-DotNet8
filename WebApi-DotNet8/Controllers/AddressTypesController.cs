@@ -65,7 +65,7 @@ namespace WebApi_DotNet8.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAddressType(int id, AddressTypes addressType)
+        public async Task<IActionResult> UpdateAddressType(int id, AddressTypes addressType)
         {
             if (id != addressType.ID)
             {
