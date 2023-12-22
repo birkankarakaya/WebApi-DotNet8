@@ -20,7 +20,7 @@ namespace WebApi_DotNet8.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CAddresses>>> GetCAddresses()
+        public async Task<ActionResult<IEnumerable<CAddresses>>> GetAllCAddresses()
         {
             return await _context.CAddresses.Where(a => a.IsDelete == false).ToListAsync();
         }
